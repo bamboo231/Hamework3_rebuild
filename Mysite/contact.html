@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sino薏仁快熱天地：聯絡我</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+    <table Width="1024" Height="2000">   <!--表格(table)裡面有tr跟td-->
+        <tr>
+        <td  id="logo" Width="200" Height="100"><img src="logo.png" Width="100">LOGO</td>
+        <td  id="title" align="center"><h1>聯絡我</h1></td>       <!--vertical align:垂直對齊-->
+        </tr>
+        <tr>
+            <td id="menu" align="center" valign="top">
+                <p><a href="index.html">首頁</a></p>                         <!--Paragraph:段落-->
+                <p><a href="about me.html">佛洛伊德三大要素</a></p>
+                <p><a href="dowork.html">表現主義</a></p>
+                <p><a href="links.html">供奉起來膜拜</a></p>
+                <p></p><a href="contact.html">心電感應</a></p>
+            </td>
+            <td id="main" valign="top">
+                <form action="http://sino.com.form.php">    <!--action="傳送到的後端位址"-->
+                    <table>
+                        <tr>
+                            <td>
+                                暱稱:       <!--輸入文字方塊-->
+                            </td>
+                            <td>
+                                <input type="text" name="nickname">     <!--input不會有結束標籤--><!--name送到主機端的屬性是nickname-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                性別:       <!--單選-->
+                            </td>
+                            <td>
+                                <input type="radio" name="sex" value="1">男     <!--變數名稱是name，設定一樣是單選-->
+                                <input type="radio" name="sex" value="2">女     <!--value是回傳值-->
+                                <input type="radio" name="sex" value="3">不提供     
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                興趣:       <!--多選-->
+                            </td>
+                            <td>
+                                <input type="checkbox" name="inst" value="1">吃飯     <!--變數名稱是name-->
+                                <input type="checkbox" name="inst" value="2">睡覺     <!--value是回傳值-->
+                                <input type="checkbox" name="inst" value="3">打電動     
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                地區:       <!--下拉是選單-->
+                            </td>
+                            <td>
+                                <select name="city">                                   <!--變數名稱是name-->
+                                    <option>--請選擇--</option>
+                                    <option value="1">台南市</option>
+                                    <option value="2">高雄市</option>
+                                    <option value="3">台北市</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                意見:       <!--下拉是選單-->
+                            </td>
+                            <td>
+                                <textarea name="msg" row="5" cols="20">請輸入意見
+                                </textarea>   <!--填寫文字區域--><!--row可填入行數 / cols每行可填入字數 -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="reset" >      <!--value可以顯示按鈕文字，預設為"提交"-->
+                            </td>
+                            <td>
+                                <input type="submit" value="送出意見">      <!--value可以顯示按鈕文字，預設為"提交"-->
+                            </td>
+                        </tr>
+                    </table>
+                </form> 
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
